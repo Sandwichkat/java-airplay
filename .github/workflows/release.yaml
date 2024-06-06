@@ -23,8 +23,8 @@ jobs:
 
       - uses: softprops/action-gh-release@v1
         env:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           tag_name: ${{ env.tag }}
           name: ${{ env.tag }}
